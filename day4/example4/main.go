@@ -33,11 +33,11 @@ func main() {
 	fmt.Println(f(1000))
 
 	f1 := makeSuffix(".bmp")
-	fmt.Println(f1("test"))
+	fmt.Println(f1("my_test"))
 	fmt.Println(f1("pic"))
 
 	f2 := makeSuffix(".jpg")
-	fmt.Println(f2("test"))
+	fmt.Println(f2("my_test"))
 	fmt.Println(f2("pic"))
 
 }

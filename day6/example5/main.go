@@ -42,5 +42,5 @@ func main() {
 		Sex:  "female",
 	}
 	Test(b)
-	just(28, 8.2, "this is a test", b, &b)
+	just(28, 8.2, "this is a my_test", b, &b)
 }

@@ -16,7 +16,7 @@ const form = `<html><body><form action="#" method="post" name="bar">
 func SimpleServer(w http.ResponseWriter, request *http.Request) {
 	fmt.Fprintln(w, "hello, world")
 	//io.WriteString(w, "hello, world")
-	panic("test test")
+	panic("my_test my_test")
 }
 
 func FormServer(w http.ResponseWriter, request *http.Request) {
@@ -35,7 +35,7 @@ func FormServer(w http.ResponseWriter, request *http.Request) {
 	}
 }
 func main() {
-	http.HandleFunc("/test1", logPanics(SimpleServer))
+	http.HandleFunc("/a", logPanics(SimpleServer))
 	http.HandleFunc("/test2", logPanics(FormServer))
 	if err := http.ListenAndServe(":8088", nil); err != nil {
 	}

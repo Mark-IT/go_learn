@@ -37,7 +37,7 @@ func main() {
 	train.Set(100) // 等价于(&train).Set(100)
 	fmt.Println(train)
 	train.Car.Set("huas", 1001)
-	train.Car.Name = "test"
+	train.Car.Name = "my_test"
 	fmt.Println(train)
 
 }

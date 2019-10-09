@@ -56,7 +56,7 @@ func testMap() (ret string, err error) {
 func test2() {
 	data, err := testMap()
 	if err != nil {
-		fmt.Println("test map failed, ", err)
+		fmt.Println("my_test map failed, ", err)
 		return
 	}
 
@@ -72,7 +72,7 @@ func test2() {
 func test() {
 	data, err := testStruct()
 	if err != nil {
-		fmt.Println("test struct failed, ", err)
+		fmt.Println("my_test struct failed, ", err)
 		return
 	}
 

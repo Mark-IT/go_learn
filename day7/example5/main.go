@@ -17,7 +17,7 @@ type CharCount struct {
 }
 
 func main() {
-	file, err := os.Open("C:/test.log")
+	file, err := os.Open("C:/my_test.log")
 	if err != nil {
 		fmt.Println("read file err:", err)
 		return

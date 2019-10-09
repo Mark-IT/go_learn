@@ -53,7 +53,7 @@ func main() {
 	fmt.Printf("%t\n", b)
 	fmt.Printf("%b\n", 100)
 	fmt.Printf("%f\n", 199.22)
-	fmt.Printf("%q\n", "this is a test")
+	fmt.Printf("%q\n", "this is a my_test")
 	fmt.Printf("%x\n", 39839333)
 	fmt.Printf("%p\n", &a)
 

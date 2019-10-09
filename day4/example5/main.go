@@ -7,7 +7,7 @@ func test1() {
 	a[0] = 100
 	a[9] = 200
 
-	fmt.Println("test1 a:", a)
+	fmt.Println("a a:", a)
 
 	for i := 0; i < len(a); i++ {
 		fmt.Println(a[i])
