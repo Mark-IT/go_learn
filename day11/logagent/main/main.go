@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	filename := "./conf/logagent.conf"
+	filename := "./logagent.conf"
 	err := loadConf("ini", filename)
 	if err != nil {
 		fmt.Printf("load conf failed, err:%v\n", err)
@@ -24,22 +24,22 @@ func main() {
 		return
 	}
 
-	logs.Debug("load conf succ, config:%v", appConfig)
+	logs.Debug("load conf success, config:%v", appConfig)
 
-	//collectConf, err := initEtcd(appConfig.etcdAddr, appConfig.etcdKey)
-	//if err != nil {
-	//	logs.Error("init etcd failed, err:%v", err)
-	//	return
-	//}
-	//logs.Debug("initialize etcd succ")
+	collectConf, err := initEtcd(appConfig.etcdAddr, appConfig.etcdKey) // 从etcd中读取配置
+	if err != nil {
+		logs.Error("init etcd failed, err:%v", err)
+		return
+	}
+	logs.Debug("initialize etcd success")
 
-	err = tailf.InitTail(appConfig.collectConf, appConfig.chanSize)
+	err = tailf.InitTail(collectConf, appConfig.chanSize)
 	if err != nil {
 		logs.Error("init tail failed, err:%v", err)
 		return
 	}
 
-	logs.Debug("initialize tailf succ")
+	logs.Debug("initialize tailf success")
 	err = kafka.InitKafka(appConfig.kafkaAddr)
 	if err != nil {
 		logs.Error("init tail failed, err:%v", err)

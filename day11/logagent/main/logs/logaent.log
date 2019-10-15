@@ -1,0 +1,51 @@
+2019/10/15 19:23:37.673 [D]  load conf success, config:&{debug ./logs/logaent.log 100 127.0.0.1:9092 [{D:\go_test\src\go_learn\day11\logagent\main\logs\logaent.log nginx_log}] 127.0.0.1:2379 /backend/logagent/config/}
+2019/10/15 19:23:38.677 [E]  client get from etcd failed, err:context deadline exceeded
+2019/10/15 19:23:38.735 [D]  resp from etcd:[]
+2019/10/15 19:23:38.736 [D]  resp from etcd:[]
+2019/10/15 19:23:38.736 [D]  initialize etcd success
+2019/10/15 19:23:38.736 [E]  invalid config for log collect, conf:[]
+2019/10/15 19:23:38.736 [D]  initialize tailf success
+2019/10/15 19:23:38.737 [D]  begin watch key:/backend/logagent/config/192.168.16.1
+2019/10/15 19:23:38.737 [D]  begin watch key:/backend/logagent/config/192.168.123.211
+2019/10/15 19:23:38.740 [D]  begin watch key:/backend/logagent/config/192.168.3.1
+2019/10/15 19:23:43.503 [E]  init kafka producer failed, err: kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2019/10/15 19:23:43.503 [E]  init tail failed, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2019/10/15 19:33:49.350 [D]  load conf success, config:&{debug ./logs/logaent.log 100 127.0.0.1:9092 [{D:\go_test\src\go_learn\day11\logagent\main\logs\logaent.log nginx_log}] 127.0.0.1:2379 /backend/logagent/config/}
+2019/10/15 19:33:50.354 [E]  client get from etcd failed, err:context deadline exceeded
+2019/10/15 19:33:50.373 [D]  resp from etcd:[]
+2019/10/15 19:33:50.375 [D]  resp from etcd:[]
+2019/10/15 19:33:50.375 [D]  initialize etcd success
+2019/10/15 19:33:50.376 [E]  invalid config for log collect, conf:[]
+2019/10/15 19:33:50.376 [D]  initialize tailf success
+2019/10/15 19:33:50.379 [D]  begin watch key:/backend/logagent/config/192.168.123.211
+2019/10/15 19:33:50.379 [D]  begin watch key:/backend/logagent/config/192.168.16.1
+2019/10/15 19:33:50.381 [D]  begin watch key:/backend/logagent/config/192.168.3.1
+2019/10/15 19:33:50.414 [D]  init kafka succ
+2019/10/15 19:33:50.414 [D]  initialize all succ
+2019/10/15 19:44:26.389 [D]  load conf success, config:&{debug ./logs/logaent.log 100 127.0.0.1:9092 [{D:\go_test\src\go_learn\day11\logagent\main\logs\logaent.log nginx_log}] 127.0.0.1:2379 /backend/logagent/config/}
+2019/10/15 19:44:27.393 [E]  client get from etcd failed, err:context deadline exceeded
+2019/10/15 19:44:27.411 [D]  resp from etcd:[]
+2019/10/15 19:44:27.416 [D]  resp from etcd:[]
+2019/10/15 19:44:27.417 [D]  initialize etcd success
+2019/10/15 19:44:27.417 [E]  invalid config for log collect, conf:[]
+2019/10/15 19:44:27.418 [D]  initialize tailf success
+2019/10/15 19:44:27.424 [D]  begin watch key:/backend/logagent/config/192.168.123.211
+2019/10/15 19:44:27.424 [D]  begin watch key:/backend/logagent/config/192.168.3.1
+2019/10/15 19:44:27.424 [D]  begin watch key:/backend/logagent/config/192.168.16.1
+2019/10/15 19:44:27.444 [D]  init kafka succ
+2019/10/15 19:44:27.444 [D]  initialize all succ
+2019/10/15 19:44:52.774 [D]  load conf success, config:&{debug ./logs/logaent.log 100 127.0.0.1:9092 [{D:\go_test\src\go_learn\day11\logagent\main\logs\logaent.log nginx_log}] 127.0.0.1:2379 /backend/logagent/config/}
+2019/10/15 19:44:53.777 [E]  client get from etcd failed, err:context deadline exceeded
+2019/10/15 19:44:53.785 [D]  resp from etcd:[]
+2019/10/15 19:44:53.786 [D]  resp from etcd:[]
+2019/10/15 19:44:53.786 [D]  initialize etcd success
+2019/10/15 19:44:53.786 [E]  invalid config for log collect, conf:[]
+2019/10/15 19:44:53.786 [D]  initialize tailf success
+2019/10/15 19:44:53.786 [D]  begin watch key:/backend/logagent/config/192.168.123.211
+2019/10/15 19:44:53.786 [D]  begin watch key:/backend/logagent/config/192.168.16.1
+2019/10/15 19:44:53.786 [D]  begin watch key:/backend/logagent/config/192.168.3.1
+2019/10/15 19:44:53.799 [D]  init kafka succ
+2019/10/15 19:44:53.799 [D]  initialize all succ
+2019/10/15 19:50:38.012 [D]  get config from etcd, PUT "/backend/logagent/config/192.168.123.211" : "[{\"logpath\":\"D:\\\\project\\\\logs\\\\logagent.log\",\"topic\":\"nginx_log\"},{\"logpath\":\"D:/project/nginx/logs/error2.log\",\"topic\":\"nginx_log_err\"}]"
+
+2019/10/15 19:50:38.012 [D]  get config from etcd succ, [{D:\project\logs\logagent.log nginx_log} {D:/project/nginx/logs/error2.log nginx_log_err}]
