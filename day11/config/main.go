@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	conf, err := config.NewConfig("ini", "./logagent.conf")
+	conf, err := config.NewConfig("ini", "D:\\go_test\\src\\go_learn\\day11\\config\\logagent.conf")	// 按 ini格式读取配置
 	if err != nil {
 		fmt.Println("new config failed, err:", err)
 		return
@@ -19,13 +19,13 @@ func main() {
 	}
 
 	fmt.Println("Port:", port)
-	log_level := conf.String("logs::log_level")
-	if len(log_level) == 0 {
-		log_level = "debug"
+	logLevel := conf.String("logs::log_level")
+	if len(logLevel) == 0 {
+		logLevel = "debug"
 	}
 
-	fmt.Println("log_level:", log_level)
+	fmt.Println("log_level:", logLevel)
 
-	log_path := conf.String("logs::log_path")
-	fmt.Println("log_path:", log_path)
+	logPath := conf.String("logs::log_path")
+	fmt.Println("log_path:", logPath)
 }

@@ -1,11 +1,10 @@
 package tailf
 
 import (
-	"sync"
-	"time"
-
 	"github.com/astaxie/beego/logs"
 	"github.com/hpcloud/tail"
+	"sync"
+	"time"
 )
 
 const (
